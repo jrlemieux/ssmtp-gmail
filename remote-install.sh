@@ -101,7 +101,7 @@ export s
 # Now the contents is also in an environment symbol 's'.
 # We use awk to dump this symbol into a file, because it contains $ characters that must not be expanded.
 echo "" | awk '{ print ENVIRON["s"] }' | sudo tee $SCRIPT_NAME >/dev/null
-# The script must be executable by all. Note that we can do a setuid on this file because this feature is ignored on .sh files. 
+# The script must be executable by all. Note that we cannot do a setuid on this file because this feature is ignored on .sh files. 
 setPerm "$SCRIPT_NAME" a=rx,g=rx,u=rx
 
 # The folder itself must be readable for all users so that the script above can be accessed. There is no harm in letting people
