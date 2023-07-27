@@ -30,5 +30,7 @@ The installation script assumes that you have sudo access.
 
 Hopefull, this will be useful to someone else. It fully details all the elements required to make ssmtp work well under this limited use case.
 
+Tested under Ubuntu 22.04.
+
 JL
 
