@@ -26,6 +26,8 @@ The "remote-install.sh" script performs these tasks:
 * It creates a script that will trap all calls to sendmail (i.e. it will become the new sendmail). This script, in turn, will call the ssmtp program, but with hard-coding the email address that will receive the email. This script will also log -- if the debug flag has been defined as "1" -- (i) the command line parameters initially supplied to sendmail, (ii) and the actual email message body that will be piped into the ssmtp program. The log files are named /tmp/ssmtp-handler.sh-bob.log for messages sent by Bob, /tmp/ssmtp-handler.sh-alice.log for messages sent by Alice, etc.
 * The script sets all the appropriate ownership and permissions on files and folders involved.
 
+The installation script assumes that you have sudo access.
+
 Hopefull, this will be useful to someone else. It fully details all the elements required to make ssmtp work well under this limited use case.
 
 JL
