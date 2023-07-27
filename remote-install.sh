@@ -42,7 +42,7 @@ else
   echo " - ssmtp is already installed."    	
 fi
 
-# Figure out where and the ssmtp program and the sendmail link.
+# Figure out where is the ssmtp program and what is the sendmail link.
 SSMTP_EXEC=`which ssmtp`
 SENDMAIL_SYMLINK=`which sendmail`
 
