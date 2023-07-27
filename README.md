@@ -9,12 +9,12 @@ I wrote this because I have spent too much time fiddling with ssmtp over the yea
 The main script "install.sh" can be called with the parameters:
 
 ```
-$ ./install.sh bob@myserver.com bob.r.smith@gmail.com jjdhsgggfaghhsjks 0
+$ ./install.sh bob@myserver.com mickey.mouse@gmail.com jjdhsgggfaghhsjks 0
 ```
 
 Where: 
 * "bob<span>@</span>myserver.com" corresponds to the ssh username/host specification. The installation script will run on this host. So here, we are installing on the server at "myserver.com".
-* "bob.r.smith<span>@</span>gmail.com" is the Gmail address to which ALL messages sent by sendmail will be sent. It is also the Gmail email address that will be used to send the outbound messages.
+* "mickey.mouse<span>@</span>gmail.com" is the Gmail address to which ALL messages sent by sendmail will be sent. It is also the Gmail email address that will be used to send the outbound messages.
 * "jjdhsgggfaghhsjks" is an Google application password associated with the Gmail account specified by the Gmail address.
 * The last 0 is a flag (0 or 1) that indicates whether we want to turn logging on or not (see below).
 
