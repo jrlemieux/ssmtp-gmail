@@ -1,4 +1,5 @@
 # ssmtp-gmail
+
 A script to make ssmtp work with Gmail SMTP, with a single pre-fixed destination correspondant.
 
 Over the years, I've been struggling to make ssmtp work with Google SMTP servers. It seems that the "rewriting"
