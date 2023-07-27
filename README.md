@@ -8,7 +8,9 @@ I wrote this because I have spent too much time fiddling with ssmtp over the yea
 
 The main script "install.sh" can be called with the parameters:
 
+```
 $ ./install.sh bob@myserver.com bob.r.smith@gmail.com jjdhsgggfaghhsjks 0
+```
 
 Where: 
 * "bob@myserver.com" corresponds to the ssh username/host specification. The installation script will run on this host. So here, we are installing on the server at "myserver.com".
@@ -38,7 +40,8 @@ You are supposed to receive a message with a body "hello".
 
 If you enabled logging, you would find this file in /tmp/ssmtp-handler.sh-bob.log if your username is bob:
 
-```/etc/ssmtp/ssmtp-handler.sh called with: /usr/sbin/sendmail
+```
+/etc/ssmtp/ssmtp-handler.sh called with: /usr/sbin/sendmail
 hello
 ```
 
