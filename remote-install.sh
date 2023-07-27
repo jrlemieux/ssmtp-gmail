@@ -109,7 +109,7 @@ setPerm "$SCRIPT_NAME" a=rx,g=rx,u=rx
 setPerm /etc/ssmtp a=rx,g=rx,u=rx
 
 # Change the sendmail link so that it points to our script.
-sudo ln -f -s /etc/ssmtp/ssmtp-handler.sh $SENDMAIL_SYMLINK
+sudo ln -f -s $SCRIPT_NAME $SENDMAIL_SYMLINK
 
 # The ssmtp program, which will be run by anyone, must have a setuid in order to access its protected configuration files.
 setPerm "$SSMTP_EXEC" a=rx,g=rxs,u=rx
