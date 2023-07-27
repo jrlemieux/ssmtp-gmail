@@ -2,8 +2,6 @@
 
 #************************************************************************************
 #
-# SSTMP_HANDLER.SH
-#
 # A shell script that installs a shell script that will trap the calls to sendmail target, and calling the
 # ssmtp program specifying a fixed destination email address. This is to prevent the bugs with revaliases 
 # file, which can then be empty.
