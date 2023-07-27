@@ -30,6 +30,18 @@ The installation script assumes that you have sudo access.
 
 Hopefull, this will be useful to someone else. It fully details all the elements required to make ssmtp work well under this limited use case.
 
+If you run this command:
+```
+echo "hello" | sendmail
+```
+You are supposed to receive a message with a body "hello".
+
+If you enabled logging, you would find this file in /tmp/ssmtp-handler.sh-bob.log if your username is bob:
+
+```/etc/ssmtp/ssmtp-handler.sh called with: /usr/sbin/sendmail
+hello
+```
+
 Tested under Ubuntu 22.04.
 
 JL
